@@ -1,180 +1,113 @@
-SPEAKEASE AAC - PRIVACY POLICY
-===============================
-Last updated: February 2026
-
-
-OVERVIEW
---------
-SpeakEase AAC ("the App") is an augmentative and alternative communication
-(AAC) application developed by Sentiq Robotics, designed for children and
-individuals with communication needs. This privacy policy explains how the
-App handles data. We are committed to protecting the privacy of all users,
-especially children under 13, in compliance with the Children's Online
-Privacy Protection Act (COPPA).
-
-
-INFORMATION WE DO NOT COLLECT
------------------------------
-The App does not collect, transmit, or share personal information for
-advertising, analytics, or tracking. Specifically:
-
-  - No advertising IDs or device fingerprinting
-  - No location data
-  - No browsing history or search queries
-  - No analytics or crash-reporting SDKs
-  - No social media integrations
-
-
-DATA STORED LOCALLY
--------------------
-The App stores the following data exclusively on your device:
-
-  - User profiles (display name and preferences)
-  - Vocabulary customizations and custom words
-  - Word usage statistics (for prediction improvement)
-  - Sentence history
-  - Generated stories (saved to Story Library)
-  - Custom audio recordings
-  - App preferences (theme, voice, grid layout)
-  - PIN hash for parental access control
-
-This data never leaves your device unless you explicitly use Cloud Backup
-or an optional AI feature.
-
-
-TEXT-TO-SPEECH
---------------
-The App uses the device's built-in text-to-speech engine to speak words and
-sentences aloud. All speech processing happens on-device. No audio or text
-is sent to external servers for TTS.
-
-
-OPTIONAL AI FEATURES (PARENT-GATED)
-------------------------------------
-The following features require a parent/caregiver to provide their own
-OpenAI API key in settings. They are disabled by default and gated behind
-parental controls:
-
-  - Daily Story Generator -- sends today's communicated words (not names
-    or PII) to OpenAI to generate a bedtime story. Limited to one story
-    per day.
-
-  - AI Sentence Completion -- sends partial sentences to OpenAI for
-    completion suggestions.
-
-  - AI Image Generation -- sends a word label to OpenAI to create a
-    vocabulary image.
-
-  - AI Communication Coach -- sends anonymized word usage patterns (no
-    names) to OpenAI for coaching tips.
-
-These features use "the child" or "our friend" instead of real names to
-protect privacy. The API key is stored encrypted (AES-256) on-device.
-OpenAI's data usage policy applies to these requests:
-https://openai.com/policies/privacy-policy
-
-
-ON-DEVICE TRANSLATION
----------------------
-The App uses Google ML Kit for on-device language translation. Translation
-models are downloaded to the device and all translation happens locally.
-No text is sent to Google servers for translation.
-
-
-CLOUD BACKUP (OPTIONAL)
-------------------------
-Parents/caregivers may enable Google Drive cloud backup:
-
-  - Requires Google Sign-In (email used for authentication only)
-  - Backup data is encrypted with AES-256-CBC before upload
-  - Stored in Google Drive's hidden app folder (not visible in Drive)
-  - Only the last 3 backups are kept; older ones are automatically deleted
-  - Can be disabled at any time in settings
-
-Google's privacy policy applies to data stored on Google Drive:
-https://policies.google.com/privacy
-
-
-IN-APP PURCHASES
-----------------
-The App uses RevenueCat to manage optional premium subscriptions and
-one-time purchases. RevenueCat processes:
-
-  - Anonymous user ID (no name or email)
-  - Purchase receipts from Google Play
-  - Subscription status
-
-No personal information is shared with RevenueCat. Their privacy policy:
-https://www.revenuecat.com/privacy
-
-
-CAMERA & NFC
--------------
-The App may request camera access for QR code scanning and NFC access for
-vocabulary tags. These features:
-
-  - Process data entirely on-device
-  - Do not transmit images or NFC data externally
-  - Are optional and can be denied at the system level
-
-
-AUDIO RECORDING
----------------
-The App allows parents/caregivers to record custom audio clips for
-vocabulary words. Recordings are stored locally on the device and are
-never transmitted externally.
-
-
-PARENTAL CONTROLS
------------------
-The App includes PIN-protected parental controls. Settings that modify the
-app's behavior, manage data, enable AI features, or access purchases
-require parent/caregiver verification through a PIN code or math challenge.
-The PIN is stored as a PBKDF2-HMAC-SHA256 hash and cannot be recovered
-from stored data.
-
-
-DATA DELETION
--------------
-All app data can be deleted at any time by:
-
-  - Deleting a user profile (removes all associated data)
-  - Signing out of Google (removes cloud backup access)
-  - Clearing the app's data through device settings
-  - Uninstalling the App
-
-Deletion of local data is immediate and permanent. Cloud backups on Google
-Drive can be removed from the backup settings screen.
-
-
-COPPA COMPLIANCE
-----------------
-This App complies with the Children's Online Privacy Protection Act (COPPA):
-
-  - Parental consent is required before first use
-  - No personal information is collected from children
-  - AI features are disabled by default and parent-gated
-  - No names or PII are sent to external APIs
-  - Parents can review and delete all data at any time
-  - No advertising or behavioral tracking
-
-
-CHANGES TO THIS POLICY
------------------------
-We may update this privacy policy from time to time. Changes will be
-reflected in the "Last updated" date above and will be available within
-the App and on this page. Continued use of the App after changes
-constitutes acceptance of the updated policy.
-
-
-CONTACT
--------
-If you have questions about this privacy policy or the App's data
-practices, please contact us at:
-
-  Sentiq Robotics
-  Email: support@sentiqrobotics.com
-  Google Play Store: SpeakEase AAC
-
-
-Copyright 2026 Sentiq Robotics. All rights reserved.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpeakEase AAC - Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+    h1 { color: #1a1a1a; border-bottom: 2px solid #4CAF50; padding-bottom: 10px; }
+    h2 { color: #2e7d32; margin-top: 30px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 5px; }
+    a { color: #1976D2; }
+    .updated { color: #666; font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>SpeakEase AAC &mdash; Privacy Policy</h1>
+  <p class="updated">Last updated: February 2026</p>
+  <h2>Overview</h2>
+  <p>SpeakEase AAC ("the App") is an augmentative and alternative communication (AAC) application developed by Sentiq Robotics, designed for children and individuals with communication needs. This privacy policy explains how the App handles data. We are committed to protecting the privacy of all users, especially children under 13, in compliance with the Children's Online Privacy Protection Act (COPPA).</p>
+  <h2>Information We Do Not Collect</h2>
+  <p>The App does not collect, transmit, or share personal information for advertising, analytics, or tracking. Specifically:</p>
+  <ul>
+    <li>No advertising IDs or device fingerprinting</li>
+    <li>No location data collection</li>
+    <li>No contact list or phone number access</li>
+    <li>No third-party analytics or tracking SDKs</li>
+    <li>No social media integration</li>
+  </ul>
+  <h2>Information Stored Locally</h2>
+  <p>The App stores the following data on your device only:</p>
+  <ul>
+    <li>User profiles (display name and preferences)</li>
+    <li>Vocabulary customizations and custom words</li>
+    <li>Word usage statistics (for prediction improvement)</li>
+    <li>Sentence history</li>
+    <li>Generated stories (saved to Story Library)</li>
+    <li>Custom audio recordings</li>
+    <li>App preferences (theme, voice, grid layout)</li>
+    <li>PIN hash for parental access control</li>
+  </ul>
+  <p>This data never leaves your device unless you explicitly use Cloud Backup or an optional AI feature.</p>
+  <h2>Text-to-Speech</h2>
+  <p>The App uses the device's built-in text-to-speech engine to speak words and sentences aloud. All speech processing happens on-device. No audio or text is sent to external servers for TTS.</p>
+  <h2>Optional AI Features (Parent-Gated)</h2>
+  <p>The following features require a parent/caregiver to provide their own OpenAI API key in settings. They are disabled by default and gated behind parental controls:</p>
+  <ul>
+    <li><strong>Daily Story Generator</strong> &mdash; sends today's communicated words (not names or PII) to OpenAI to generate a bedtime story. Limited to one story per day.</li>
+    <li><strong>AI Sentence Completion</strong> &mdash; sends partial sentences to OpenAI for completion suggestions.</li>
+    <li><strong>AI Image Generation</strong> &mdash; sends a word label to OpenAI to create a vocabulary image.</li>
+    <li><strong>AI Communication Coach</strong> &mdash; sends anonymized word usage patterns (no names) to OpenAI for coaching tips.</li>
+  </ul>
+  <p>These features use "the child" or "our friend" instead of real names to protect privacy. The API key is stored encrypted (AES-256) on-device.</p>
+  <p>OpenAI's data usage policy applies to these requests: <a href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a></p>
+  <h2>On-Device Translation</h2>
+  <p>The App uses Google ML Kit for on-device language translation. Translation models are downloaded to the device and all translation happens locally. No text is sent to Google servers for translation.</p>
+  <h2>Cloud Backup (Optional)</h2>
+  <p>Parents/caregivers may enable Google Drive cloud backup:</p>
+  <ul>
+    <li>Requires Google Sign-In (email used for authentication only)</li>
+    <li>Backup data is encrypted with AES-256-CBC before upload</li>
+    <li>Stored in Google Drive's hidden app folder (not visible in Drive)</li>
+    <li>Only the last 3 backups are kept; older ones are automatically deleted</li>
+    <li>Can be disabled at any time in settings</li>
+  </ul>
+  <p>Google's privacy policy applies to data stored on Google Drive: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+  <h2>In-App Purchases</h2>
+  <p>The App uses RevenueCat to manage optional premium subscriptions and one-time purchases. RevenueCat processes:</p>
+  <ul>
+    <li>Anonymous user ID (no name or email)</li>
+    <li>Purchase receipts from Google Play</li>
+    <li>Subscription status</li>
+  </ul>
+  <p>No personal information is shared with RevenueCat. Their privacy policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+  <h2>Camera &amp; NFC</h2>
+  <p>The App may request camera access for QR code scanning and NFC access for vocabulary tags. These features:</p>
+  <ul>
+    <li>Process data entirely on-device</li>
+    <li>Do not transmit images or NFC data externally</li>
+    <li>Are optional and can be denied at the system level</li>
+  </ul>
+  <h2>Audio Recording</h2>
+  <p>The App allows parents/caregivers to record custom audio clips for vocabulary words. Recordings are stored locally on the device and are never transmitted externally.</p>
+  <h2>Parental Controls</h2>
+  <p>The App includes PIN-protected parental controls. Settings that modify the app's behavior, manage data, enable AI features, or access purchases require parent/caregiver verification through a PIN code or math challenge. The PIN is stored as a PBKDF2-HMAC-SHA256 hash and cannot be recovered from stored data.</p>
+  <h2>Data Deletion</h2>
+  <p>All app data can be deleted at any time by:</p>
+  <ul>
+    <li>Deleting a user profile (removes all associated data)</li>
+    <li>Signing out of Google (removes cloud backup access)</li>
+    <li>Clearing the app's data through device settings</li>
+    <li>Uninstalling the App</li>
+  </ul>
+  <p>Deletion of local data is immediate and permanent. Cloud backups on Google Drive can be removed from the backup settings screen.</p>
+  <h2>COPPA Compliance</h2>
+  <p>This App complies with the Children's Online Privacy Protection Act (COPPA):</p>
+  <ul>
+    <li>Parental consent is required before first use</li>
+    <li>No personal information is collected from children</li>
+    <li>AI features are disabled by default and parent-gated</li>
+    <li>No names or PII are sent to external APIs</li>
+    <li>Parents can review and delete all data at any time</li>
+    <li>No advertising or behavioral tracking</li>
+  </ul>
+  <h2>Changes to This Policy</h2>
+  <p>We may update this privacy policy from time to time. Changes will be reflected in the "Last updated" date above and will be available within the App and on this page. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy or the App's data practices, please contact us at:</p>
+  <p>Sentiq Robotics<br>Email: <a href="mailto:support@sentiqrobotics.com">support@sentiqrobotics.com</a></p>
+  <p style="margin-top:40px;color:#999;font-size:0.9em;">Google Play Store: SpeakEase AAC<br>Copyright 2026 Sentiq Robotics. All rights reserved.</p>
+</body>
+</html>
